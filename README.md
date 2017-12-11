@@ -43,7 +43,7 @@ run
 ```javascript
 npm run test
 ```
-result of tests stored in the **coverage** folder.
+result of tests in the **coverage** folder.
 
 100% coverage in progress...
 
