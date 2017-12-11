@@ -46,7 +46,9 @@ const getStats = (link) => {
   return rp(options).then(res => Object.assign({}, res, link));
 };
 
-
+/**
+ * Send request to create shorten url and then send request to retrieve stats
+ */
 app.post('/api/shorten', (req, res) => {
   const { url } = req.body;
   createLink(url).then(getStats).then((link) => {
