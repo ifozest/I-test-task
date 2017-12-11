@@ -20,9 +20,9 @@ const propTypes = {
  * @param {Object} link - link to display
  * @param {function} onCopy - action to call after copy link to Clipboard
  */
-function LinkListItem({ link, onCopy }) {
+function LinkListItem({ link, newLink, onCopy }) {
   const url = SERVER + link.shortcode;
-  const cssStyles = link.isNew ? 'link-new' : '';
+  const cssStyles = link.shortcode === newLink ? 'link-new' : '';
 
   return (
     <li className={`link ${cssStyles}`}>

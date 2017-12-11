@@ -8,7 +8,6 @@ import LinkListEmptyData from 'components/LinkListEmptyData';
 
 const propTypes = {
   links: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  newLink: PropTypes.string.isRequired,
 };
 
 /**
@@ -16,14 +15,13 @@ const propTypes = {
  * If there are no Links - show message
  * @param links
  */
-function LinkList({ links, newLink }) {
+function LinkList({ links }) {
   let data;
 
   if (links.length > 0) {
     data = (
       <LinkListData
         links={links}
-        newLink={newLink}
       />
     );
   } else {

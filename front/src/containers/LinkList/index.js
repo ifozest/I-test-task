@@ -2,9 +2,8 @@ import { connect } from 'react-redux';
 
 import LinkList from 'components/LinkList';
 
-const mapStateToProps = ({ links, newLink }) => ({
+const mapStateToProps = ({ links }) => ({
   links,
-  newLink,
 });
 
 export default connect(mapStateToProps)(LinkList);
