@@ -1,0 +1,12 @@
+.list-headings {
+  display: grid;
+  grid-template-columns: auto 100px 150px;
+  grid-column-gap: 20px;
+  text-transform: uppercase;
+  color: $secondaryText;
+  font-size: 14px;
+  font-family: 'roboto-regular', sans-serif;
+  &_count, &_date {
+    justify-self: center;
+  }
+}

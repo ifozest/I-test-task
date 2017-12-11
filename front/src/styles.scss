@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'fonts';
+@import 'components/Header/styles';
+@import 'components/NotificationBar/styles';
+@import 'components/App/styles';
+@import 'components/LinkForm/styles';
+@import 'components/LinkList/styles';
+@import 'components/LinkListCaption/styles';
+@import 'components/LinkListHeadings/styles';
+@import 'components/LinkListEmptyData/styles';
+@import 'components/LinkListData/styles';
+@import 'components/LinkListItem/styles';
+@import 'components/Loader/styles';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: $background;
+  font-size: 16px;
+  font-family: 'roboto-light', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+

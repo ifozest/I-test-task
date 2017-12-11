@@ -1,0 +1,28 @@
+.form-container {
+  .form {
+    display: grid;
+    grid-template-columns: auto 180px;
+    grid-column-gap: 10px;
+    &_input {
+      font-size: 1rem;
+      line-height: 1.5;
+      background: $iputBackground;
+      border: 1px solid $iputBackground;
+      border-radius: 3px;
+      padding: .375rem .75rem;
+      color: $primaryText;
+    }
+    &_btn {
+      background: $accent;
+      color: $white;
+      border-radius: 3px;
+      font-size: 1rem;
+      line-height: 1.5;
+      &.disabled {
+        color: $disabledBtnText;
+        background: $disabledBtnColor;
+        border-color: $disabledBtnColor;
+      }
+    }
+  }
+}

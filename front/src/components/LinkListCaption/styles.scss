@@ -1,0 +1,17 @@
+.list-caption {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+  justify-content: start;
+  align-items: baseline;
+  &_title {
+    font-size: 22px;
+    font-family: 'roboto-light', sans-serif;
+  }
+  &_action {
+    color: $accent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

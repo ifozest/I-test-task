@@ -1,0 +1,9 @@
+.notification {
+  min-height: 30px;
+  text-align: center;
+}
+
+.notification.yellow {
+  background-color: #fff8cc;
+  border: 2px dashed #FF8800;
+}

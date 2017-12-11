@@ -1,0 +1,18 @@
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  &_logo {
+    text-decoration: underline;
+    color: $accent;
+    text-align: left;
+    font-family: 'montserrat-regular', sans-serif;
+    font-size: 47px;
+  }
+  &_info {
+    color: $secondaryText;
+    text-align: right;
+  }
+
+
+}
