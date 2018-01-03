@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
+import Rating from 'components/Rating/index';
+
 import { SERVER } from 'utils/constants';
 
 const propTypes = {
@@ -13,6 +15,33 @@ const propTypes = {
     startDate: PropTypes.string.isRequired,
   }).isRequired,
   onCopy: PropTypes.func.isRequired,
+};
+
+
+const scale = [{
+  id: 0,
+  color: 'red',
+  title: 'red',
+},{
+  id: 1,
+  color: 'blue',
+  title: 'blue',
+},{
+  id: 2,
+  color: 'green',
+  title: 'green',
+},{
+  id: 3,
+  color: 'white',
+  title: 'white',
+},{
+  id: 4,
+  color: 'black',
+  title: 'black',
+},];
+
+const onSelect = (value) => {
+  console.log(value);
 };
 
 /**
@@ -40,6 +69,15 @@ function LinkListItem({ link, newLink, onCopy }) {
       </div>
       <div className="link_count">{link.redirectCount}</div>
       <div className="link_date"><Moment fromNow>{link.startDate}</Moment></div>
+
+
+      <div>
+        <Rating
+          scale={scale}
+          onSelect={onSelect}
+        />
+      </div>
+
     </li>
   );
 }
